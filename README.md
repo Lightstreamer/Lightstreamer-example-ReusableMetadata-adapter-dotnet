@@ -7,7 +7,7 @@ This project includes a simple full implementations of Metadata Adapter in C#/.N
 ## LiteralBasedProvider Metadata Adapter
 
 The LiteralBasedProvider is a C#/.NET implementation of the *LiteralBasedProvider* Metadata Adapter in [Lightstreamer - Reusable Metadata Adapters - Java Adapters](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java).
-It extends the [MetadataProviderAdapter](http://www.lightstreamer.com/docs/adapter_dotnet_api/Lightstreamer_Interfaces_Metadata_MetadataProviderAdapter.html) class (which in turn implements the IMetadataProvider interface).
+It extends the [MetadataProviderAdapter](http://www.lightstreamer.com/docs/adapter_dotnet_api/Lightstreamer_Interfaces_Metadata_MetadataProviderAdapter.html) class (which in turn implements the [IMetadataProvider](http://www.lightstreamer.com/docs/adapter_dotnet_api/Lightstreamer_Interfaces_Metadata_IMetadataProvider.html) interface).
 It is used in Lightstreamer examples and demos based on the .NET Adapter SDK, in combination with suitable Data Adapters and Clients.
 Its binaries are included in the .NET Adapter SDK library.
 
@@ -34,14 +34,14 @@ To use one of the Metadata Adapters just built in some Remote Server, just inclu
 As said, the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider are already included in `DotNetAdapter_N2.dll`, which is part of the .NET Adapter SDK; hence this step is not needed for the LiteralBasedProvider.
 
 The LiteralBasedProvider can be configured through suitable initialization parameters. See the [class documentation](http://www.lightstreamer.com/docs/adapter_dotnet_api/Lightstreamer_Adapters_Metadata_LiteralBasedProvider.html) for details.
-For instance, you can run the supplied Remote .NET Adapter Server to host the LiteralBasedProvider through a command like the following:
+For instance, you can run the supplied Remote .NET Adapter Server to host the LiteralBasedProvider through a command like the following:<br/>
 `start "LiteralBasedProvider" /MIN DotNetServer_N2 Lightstreamer.Adapters.Metadata.LiteralBasedProvider /host localhost /rrport 6663 max_bandwidth=40 max_frequency=3 buffer_size=30`<br/>
 
 ## See Also
 <!-- START RELATED_ENTRIES -->
 
-* [Lightstreamer - .NET Portfolio Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-dotnet)
-* [Lightstreamer - .NET Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-dotnet)
+* [Lightstreamer - Portfolio Demo - .NET Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-dotnet)
+* [Lightstreamer - Stock-List Demo - .NET Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-dotnet)
 
 <!-- END RELATED_ENTRIES -->
 
