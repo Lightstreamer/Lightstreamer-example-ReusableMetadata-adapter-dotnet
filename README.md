@@ -2,7 +2,7 @@
 
 <!-- START DESCRIPTION lightstreamer-example-reusablemetadata-adapter-dotnet -->
 
-This project includes a simple full implementations of Metadata Adapter in C#/.NET made available as sample for inspiration and/or extension.
+This project includes a simple full implementation of Remote Metadata Adapter in C#/.NET made available as sample for inspiration and/or extension.
 
 ## LiteralBasedProvider Metadata Adapter
 
@@ -30,7 +30,7 @@ To build your own version of the LiteralBasedProvider binaries, follow these ste
 
 ### Deploy
 
-To use one of the Metadata Adapters just built in some Remote Server, just include the `DotNetGenericAdapters_N2.dll` library in addition to `DotNetAdapter_N2.dll`.
+To use the Metadata Adapter just built in some Remote Server, just include the `DotNetGenericAdapters_N2.dll` library in addition to `DotNetAdapter_N2.dll`.
 As said, the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider are already included in `DotNetAdapter_N2.dll`, which is part of the .NET Adapter SDK; hence this step is not needed for the LiteralBasedProvider.
 
 The LiteralBasedProvider can be configured through suitable initialization parameters. See the [class documentation](http://www.lightstreamer.com/docs/adapter_dotnet_api/Lightstreamer_Adapters_Metadata_LiteralBasedProvider.html) for details.
@@ -40,6 +40,8 @@ For instance, you can run the supplied Remote .NET Adapter Server to host the Li
 ## See Also
 <!-- START RELATED_ENTRIES -->
 
+* [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
+* [Lightstreamer - Reusable Metadata Adapters - Java Remote Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java-remote)
 * [Lightstreamer - Portfolio Demo - .NET Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-dotnet)
 * [Lightstreamer - Stock-List Demo - .NET Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-dotnet)
 
