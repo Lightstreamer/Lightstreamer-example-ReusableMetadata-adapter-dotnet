@@ -49,4 +49,4 @@ For instance, you can run the supplied Remote .NET Adapter Server to host the Li
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer SDK for .NET Adapters version 1.7 or newer.
+* Compatible with Lightstreamer SDK for .NET Adapters versions 1.7 to 1.9.
