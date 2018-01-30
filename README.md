@@ -24,7 +24,7 @@ To build your own version of the LiteralBasedProvider binaries, follow these ste
 * Download this project.
 * Create a project for a library target and name it "DotNetGenericAdapters",
 * Include in the project the sources `src`.
-* Get the Lightstreamer .NET Adapter SDK library `DotNetAdapter.dll` file from the `DOCS-SDKs/sdk_adapter_dotnet/lib` folder of the [latest Lightstreamer distribution](http://download.lightstreamer.com/#current), and copy them into the `lib` directory.
+* Get the Lightstreamer .NET Adapter SDK library `DotNetAdapter.dll` file from the `DOCS-SDKs/sdk_adapter_dotnet/lib` folder of the [latest Lightstreamer distribution](http://www.lightstreamer.com/download/), and copy them into the `lib` directory.
 * Include in the project the references to `DotNetAdapter.dll` from the `lib` folder.
 * Build Solution
 
