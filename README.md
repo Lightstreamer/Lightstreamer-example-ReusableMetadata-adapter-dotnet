@@ -7,9 +7,9 @@ This project includes a simple full implementation of Remote Metadata Adapter in
 ## LiteralBasedProvider Metadata Adapter
 
 The LiteralBasedProvider is a C#/.NET implementation of the *LiteralBasedProvider* Metadata Adapter in [Lightstreamer - Reusable Metadata Adapters - Java Adapters](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-java).
-It extends the [MetadataProviderAdapter](http://www.lightstreamer.com/docs/adapter_dotnet_api/Lightstreamer_Interfaces_Metadata_MetadataProviderAdapter.html) class (which in turn implements the [IMetadataProvider](http://www.lightstreamer.com/docs/adapter_dotnet_api/Lightstreamer_Interfaces_Metadata_IMetadataProvider.html) interface).
-It is used in Lightstreamer examples and demos based on the .NET Adapter SDK, in combination with suitable Data Adapters and Clients.
-Its binaries are included in the .NET Adapter SDK library.
+It extends the <i>MetadataProviderAdapter</i> class (which in turn implements the <i>IMetadataProvider</i> interface).
+It is used in Lightstreamer examples and demos based on the .NET Standard Adapter SDK, in combination with suitable Data Adapters and Clients.
+Its binaries are included in the .NET Standard Adapter SDK library.
 
 <!-- END DESCRIPTION lightstreamer-example-reusablemetadata-adapter-java -->
 <br>
@@ -17,25 +17,22 @@ Its binaries are included in the .NET Adapter SDK library.
 
 ## Build
 
-Note that `DotNetAdapter.dll`, provided within the .NET Adapter SDK, already includes the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider; we can ignore that for a moment.
+Note that ready-made libraries, provided within the .NET Standard, already include the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider; we can ignore that for a moment.
 If you are testing your own modified version of the LiteralBasedProvider code, take care of changing the namespace name, or, at least, the class name.
 
 To build your own version of the LiteralBasedProvider binaries, follow these steps:
 * Download this project.
 * Create a project for a library target and name it "DotNetGenericAdapters",
 * Include in the project the sources `src`.
-* Get the Lightstreamer .NET Adapter SDK library `DotNetAdapter.dll` file from the `DOCS-SDKs/sdk_adapter_dotnet/lib` folder of the [latest Lightstreamer distribution](http://www.lightstreamer.com/download/), and copy them into the `lib` directory.
-* Include in the project the references to `DotNetAdapter.dll` from the `lib` folder.
+* Get the binaries files of the Lightstreamer .NET Standard Adapters Server library from NuGet [Lightstreamer.DotNetStandard.Adapters](https://www.nuget.org/packages/Lightstreamer.DotNetStandard.Adapters/), copy it into the `lib` directory and add it as a reference for the project; or more simply, use directly the "NuGet Package Manager" looking for 'Lightstreamer Adapters' and intalling the Lightstreamer.DotNetStandard.Adapters package.
 * Build Solution
 
 ### Deploy
 
-To use the Metadata Adapter just built in some Remote Server, just include the `DotNetGenericAdapters.dll` library in addition to `DotNetAdapter.dll`.
-As said, the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider are already included in `DotNetAdapter.dll`, which is part of the .NET Adapter SDK; hence this step is not needed for the LiteralBasedProvider.
+To use the Metadata Adapter just built in some Remote Server, just include the `DotNetGenericAdapters.dll` library in addition to `DotNetStandardAdapter.dll`.
+As said, the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider are already included in `DotNetStandardAdapter.dll`, which is part of the .NET Adapter SDK; hence this step is not needed for the LiteralBasedProvider.
 
-The LiteralBasedProvider can be configured through suitable initialization parameters. See the [class documentation](http://www.lightstreamer.com/docs/adapter_dotnet_api/Lightstreamer_Adapters_Metadata_LiteralBasedProvider.html) for details.
-For instance, you can run the supplied Remote .NET Adapter Server to host the LiteralBasedProvider through a command like the following:<br/>
-`start "LiteralBasedProvider" /MIN DotNetServer Lightstreamer.Adapters.Metadata.LiteralBasedProvider /host localhost /rrport 6663 max_bandwidth=40 max_frequency=3 buffer_size=30`<br/>
+The LiteralBasedProvider can be configured through suitable initialization parameters. See the [class documentation](https://lightstreamer.com/api/ls-dotnetstandard-adapter/latest/frames.html) for details.
 
 ## See Also
 <!-- START RELATED_ENTRIES -->
@@ -49,5 +46,5 @@ For instance, you can run the supplied Remote .NET Adapter Server to host the Li
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer SDK for .NET Adapters version 1.10.
-* For instructions compatible with Lightstreamer SDK for .NET Adapters versions 1.7 to 1.9, please refer to [this tree branch](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-dotnet/tree/8f1aa1c0c40ca0cfdd1ee15f48fe442f8b8e8e58).
+* Compatible with Lightstreamer SDK for .NET Standard Adapters version 1.12.
+* For instructions compatible with Lightstreamer SDK for .NET Adapters versions 1.10, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-dotnet/releases/tag/for_1.10).
