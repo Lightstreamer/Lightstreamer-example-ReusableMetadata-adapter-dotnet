@@ -13,7 +13,6 @@ Its binaries are included in the .NET Standard Adapter SDK library.
 
 <!-- END DESCRIPTION lightstreamer-example-reusablemetadata-adapter-java -->
 <br>
-<br>
 
 ## Build
 
