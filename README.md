@@ -16,14 +16,14 @@ Its binaries are included in the .NET Standard Adapter SDK library.
 
 ## Build
 
-Note that ready-made libraries, provided within the .NET Standard, already include the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider; we can ignore that for a moment.
+Note that ready-made libraries, provided within the .NET Standard, already include the binaries for *Lightstreamer.Adapters.Metadata.LiteralBasedProvider*; we can ignore that for a moment.
 If you are testing your own modified version of the LiteralBasedProvider code, take care of changing the namespace name, or, at least, the class name.
 
 To build your own version of the LiteralBasedProvider binaries, follow these steps:
 * Download this project.
 * Create a project for a library target and name it "DotNetGenericAdapters",
 * Include in the project the sources `src`.
-* Get the binaries files of the Lightstreamer .NET Standard Adapters Server library from NuGet [Lightstreamer.DotNetStandard.Adapters](https://www.nuget.org/packages/Lightstreamer.DotNetStandard.Adapters/), copy it into the `lib` directory and add it as a reference for the project; or more simply, use directly the "NuGet Package Manager" looking for 'Lightstreamer Adapters' and intalling the Lightstreamer.DotNetStandard.Adapters package.
+* Get the binaries files of the Lightstreamer .NET Standard Adapters Server library from NuGet [Lightstreamer.DotNetStandard.Adapters](https://www.nuget.org/packages/Lightstreamer.DotNetStandard.Adapters/), copy it into the `lib` directory and add it as a reference for the project; or more simply, use directly the "NuGet Package Manager" looking for 'Lightstreamer Adapters' and intalling the *Lightstreamer.DotNetStandard.Adapters* package.
 * Build Solution
 
 ### Deploy
@@ -32,6 +32,7 @@ To use the Metadata Adapter just built in some Remote Server, just include the `
 As said, the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider are already included in `DotNetStandardAdapter.dll`, which is part of the .NET Standard Adapter SDK; hence this step is not needed for the LiteralBasedProvider.
 
 The LiteralBasedProvider can be configured through suitable initialization parameters. See the [class documentation](https://lightstreamer.com/api/ls-dotnetstandard-adapter/latest/frames.html) for details.
+<br>
 
 ## See Also
 <!-- START RELATED_ENTRIES -->
