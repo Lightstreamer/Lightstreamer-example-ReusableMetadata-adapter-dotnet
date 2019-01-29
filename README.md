@@ -29,7 +29,7 @@ To build your own version of the LiteralBasedProvider binaries, follow these ste
 ### Deploy
 
 To use the Metadata Adapter just built in some Remote Server, just include the `DotNetGenericAdapters.dll` library in addition to `DotNetStandardAdapter.dll`.
-As said, the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider are already included in `DotNetStandardAdapter.dll`, which is part of the .NET Adapter SDK; hence this step is not needed for the LiteralBasedProvider.
+As said, the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider are already included in `DotNetStandardAdapter.dll`, which is part of the .NET Standard Adapter SDK; hence this step is not needed for the LiteralBasedProvider.
 
 The LiteralBasedProvider can be configured through suitable initialization parameters. See the [class documentation](https://lightstreamer.com/api/ls-dotnetstandard-adapter/latest/frames.html) for details.
 
