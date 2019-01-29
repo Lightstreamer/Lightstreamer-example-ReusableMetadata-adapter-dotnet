@@ -23,7 +23,7 @@ To build your own version of the LiteralBasedProvider binaries, follow these ste
 * Download this project.
 * Create a project for a library target and name it "DotNetGenericAdapters",
 * Include in the project the sources `src`.
-* Get the binaries files of the Lightstreamer .NET Standard Adapters Server library from NuGet [Lightstreamer.DotNetStandard.Adapters](https://www.nuget.org/packages/Lightstreamer.DotNetStandard.Adapters/), copy it into the `lib` directory and add it as a reference for the project; or more simply, use directly the "NuGet Package Manager" looking for 'Lightstreamer Adapters' and intalling the *Lightstreamer.DotNetStandard.Adapters* package.
+* Get the binaries files of the Lightstreamer .NET Standard Adapters Server library from NuGet [Lightstreamer.DotNetStandard.Adapters](https://www.nuget.org/packages/Lightstreamer.DotNetStandard.Adapters/), copy it into the `lib` directory and add it as a reference for the project; or more simply, use directly the "NuGet Package Manager" looking for 'Lightstreamer Adapters' and installing the *Lightstreamer.DotNetStandard.Adapters* package.
 * Build Solution
 
 ### Deploy
