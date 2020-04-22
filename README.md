@@ -8,15 +8,14 @@ This project includes a simple full implementation of Remote Metadata Adapter in
 
 The LiteralBasedProvider is a C#/.NET implementation of the *LiteralBasedProvider* Metadata Adapter in [Lightstreamer - Reusable Metadata Adapters - Java Adapters](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-java).
 It extends the <i>MetadataProviderAdapter</i> class (which in turn implements the <i>IMetadataProvider</i> interface).
-It is used in Lightstreamer examples and demos based on the .NET Standard Adapter SDK, in combination with suitable Data Adapters and Clients.
-Its binaries are included in the .NET Standard Adapter SDK library.
+It is used in Lightstreamer examples and demos based on the [.NET Standard Adapter SDK](https://github.com/Lightstreamer/Lightstreamer-lib-adapter-dotnet-remote), in combination with suitable Data Adapters and Clients.
+
 
 <!-- END DESCRIPTION lightstreamer-example-reusablemetadata-adapter-java -->
 <br>
 
 ## Build
 
-Note that ready-made libraries, provided within the .NET Standard, already include the binaries for *Lightstreamer.Adapters.Metadata.LiteralBasedProvider*; we can ignore that for a moment.
 If you are testing your own modified version of the LiteralBasedProvider code, take care of changing the namespace name, or, at least, the class name.
 
 To build your own version of the LiteralBasedProvider binaries, follow these steps:
@@ -29,14 +28,12 @@ To build your own version of the LiteralBasedProvider binaries, follow these ste
 ### Deploy
 
 To use the Metadata Adapter just built in some Remote Server, just include the `DotNetGenericAdapters.dll` library in addition to `DotNetStandardAdapter.dll`.
-As said, the binaries for Lightstreamer.Adapters.Metadata.LiteralBasedProvider are already included in `DotNetStandardAdapter.dll`, which is part of the .NET Standard Adapter SDK; hence this step is not needed for the LiteralBasedProvider.
 
-The LiteralBasedProvider can be configured through suitable initialization parameters. See the [class documentation](https://lightstreamer.com/api/ls-dotnetstandard-adapter/latest/frames.html) for details.
-<br>
 
 ## See Also
 <!-- START RELATED_ENTRIES -->
 
+* [Lightstreamer .Net Remote Adapter SDK](https://github.com/Lightstreamer/Lightstreamer-lib-adapter-dotnet-remote)
 * [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-java)
 * [Lightstreamer - Reusable Metadata Adapters - Java Remote Adapter](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-java-remote)
 * [Lightstreamer - Portfolio Demo - .NET Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Portfolio-adapter-dotnet)
