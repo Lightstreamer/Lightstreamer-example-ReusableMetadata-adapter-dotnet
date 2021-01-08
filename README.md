@@ -2,6 +2,8 @@
 
 <!-- START DESCRIPTION lightstreamer-example-reusablemetadata-adapter-dotnet -->
 
+<b>WARNING. This project is obsolete, the relevant code has been merged into this project [Lightstreamer .Net Remote Adapter SDK](https://github.com/Lightstreamer/Lightstreamer-lib-adapter-dotnet-remote#literalbasedprovider); which you need to refer to for an updated version of the LiteralBasedProvider Metadata Adapter.</b>
+
 This project includes a simple full implementation of Remote Metadata Adapter in C#/.NET made available as sample for inspiration and/or extension.
 
 ## LiteralBasedProvider Metadata Adapter
